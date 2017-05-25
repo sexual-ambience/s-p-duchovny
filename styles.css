@@ -1,0 +1,42 @@
+body{
+  margin:0;
+  padding:0;
+  background-color: #000;
+}
+img, 
+video{ 
+  display:block;
+  position:relative;
+  width:33%;
+  float:right;
+}
+video{
+  position:absolute;
+}
+#feet{
+  position:fixed;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+}
+audio{
+  position:fixed;
+  bottom:10px;
+  right:10px;
+}
+
+@media screen and (max-aspect-ratio: 1/1){
+  img, 
+  video{ 
+    width:100%;
+    display:block;
+    position:relative;
+    float:none;
+    margin:0 auto;
+  }
+  #feet{
+    position:relative;
+    height:auto;
+  }
+}
